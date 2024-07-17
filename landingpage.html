@@ -9,11 +9,13 @@
 }
 img{
     justify-content: left;
+    display: flex;
+    padding-top: 50px;
 }
 ul{
     display: flex;
     justify-content: right; /*nav bar left*/
-    gap: 10px;
+    gap: 20px;
     font-weight: bold;
 }
 
@@ -25,14 +27,14 @@ li{
     font-size: 18px;
     
 }
-li a{
-    padding-bottom: 7px;
-}
+
 li a:hover{
     border-bottom: 2px solid rgb(6, 76, 6);
 }
-h2,h3{
-    font-weight: 400;
+h1{
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 50px;
 }
 
 
@@ -62,10 +64,42 @@ a:hover{
     color: rgb(4, 91, 4);
     font-weight: 400;
 }
+.headphone-details
+{
+ text-align: left;
+ height: 50vh;
+ width: 5%;
+ padding-top: 100px;
+}
+p{
+    width: 50%; 
+}
+.search-box {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  text-decoration-color: black;
+  background-color: #9977cc;
+}
+
+.search-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+
+.search-box:focus {
+  outline: none;
+  border-color: #007bff; /* Change to your desired focus color */
+}
         </style>
         </head>
 
 <body>
+    <div>
         <nav>
             <img src="your-logo.png" alt="Your Logo">
         <ul>
@@ -74,12 +108,21 @@ a:hover{
         <li><a href="#">Product</a></li>
         <li><a href="#">AboutUs</a></li>
         <li><a href="#">ContactUs</a></li>
-        <li><a href="#">Search</a></li>
+        <form action="/search" method="get">
+            <input type="text" name="search" placeholder="Search..." class="search-box">
+            <button type="submit" class="search-button">
+            </button>
+          </form>
         <li><a href="#">Login</a></li>
         </ul>
         </nav>
-        <h1>FutureTech Aakoustiká</h1>
-        <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
-        <p><a href="#">Explore More</a></p>
+        <hr>
+        <div id="headphone-details">
+         <h1>FutureTech Aakoustiká</h1>
+         <p>Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+         <p>
+            <input type="" placeholder="Explore More" class="search-box">
+        </div>
+    </div>
 </body>
 </html>
